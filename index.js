@@ -3,5 +3,5 @@ let inputText = document.querySelector('.inputText');
 //
 
 button.onclick = function () {
-  console.log('roma ya sdelal');
+  console.log(inputText.value);
 }
