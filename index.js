@@ -1,5 +1,5 @@
-let buttonAddTarget = document.querySelector('.buttonAdd');
-let inputTextTarget = document.querySelector('.inputText');
+const buttonAddTarget = document.querySelector('.buttonAdd');
+const inputTextTarget = document.querySelector('.inputText');
 //
 
 buttonAddTarget.addEventListener('click', function() {
