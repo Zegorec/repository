@@ -4,7 +4,7 @@ const listTarget = document.querySelector('.listTarget')
 //
 const showTextTargetLog = () => console.log(inputTextTarget.value);
 const addTarget = () => {
-  let newElement = document.createElement('div');
+  const newElement = document.createElement('div');
   newElement.textContent = inputTextTarget.value;
   inputTextTarget.value = '';
   return listTarget.appendChild(newElement);
