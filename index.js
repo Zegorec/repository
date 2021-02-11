@@ -1,7 +1,7 @@
-let button = document.querySelector('.buttonAdd');
-let inputText = document.querySelector('.inputText');
+let buttonAddTarget = document.querySelector('.buttonAdd');
+let inputTextTarget = document.querySelector('.inputText');
 //
 
-button.onclick = function () {
-  console.log(inputText.value);
-}
+buttonAddTarget.addEventListener('click', function() {
+  console.log(inputTextTarget.value);
+})
