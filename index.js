@@ -5,17 +5,21 @@ const listTarget = document.querySelector('.listTarget');
 //
 const proverka = () => console.log('работает');
 
-const delte = (elem) => elem.remove();
+console.log(buttonAddTarget.parentNode);
 
 const addTarget = () => {
   const newElement = document.createElement('div');
   newElement.classList.add('target');
   newElement.textContent = inputTextTarget.value;
   const delteButton = document.createElement('button');
-  delteButton.classList.add('buttonForDelte');
-  delteButton.addEventListener('click', proverka);
-  delteButton.textContent = 'Удалить';
   newElement.appendChild(delteButton);
+  delteButton.classList.add('buttonForDelte');
+  const delteTarget = () => {
+    const target = document.querySelector('.target');
+    target.parentNode.removeChild(target);
+  };
+  delteButton.addEventListener('click', delteTarget);
+  delteButton.textContent = 'Удалить';
   inputTextTarget.value = '';
   return listTarget.appendChild(newElement);
 };
